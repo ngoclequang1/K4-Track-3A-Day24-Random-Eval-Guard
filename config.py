@@ -16,8 +16,9 @@ COLLECTION_NAME = "lab24_production"
 NAIVE_COLLECTION = "lab24_naive"
 
 # --- Embedding (same as Day 18) ---
-EMBEDDING_MODEL = "BAAI/bge-m3"
-EMBEDDING_DIM = 1024
+EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDING_DIM = 384
+RERANK_MODEL = "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1"
 
 # --- Chunking (same as Day 18) ---
 HIERARCHICAL_PARENT_SIZE = 2048
